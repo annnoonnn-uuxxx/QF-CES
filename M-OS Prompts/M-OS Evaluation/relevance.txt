@@ -1,0 +1,42 @@
+Task Description:
+
+You will be given a set of information such as product title, description, key features, specifications, reviews, and average rating.  and a corresponding summary. Make sure you understand the following evaluation metric very clearly. Your task is to rate the summary corresponding to the given set of information on the evaluation criteria.
+
+Evaluation Criteria:
+Relevance - Relevance measures the selection of important information from the input, including product title, description, key features, specifications, reviews, and average rating. The summary should include only important and relevant information from the input. Summaries should not contain redundancies or excess information.
+
+Following are the scores and the evaluation criteria according to which scores must be assigned.
+<score>1</score> - The summary misses all the important opinions majorly discussed in the set of information.
+<score>2</score> - The summary misses most of the important opinions majorly discussed in the set of information or mostly has redundant/excess/unimportant details
+<score>3</score> - The summary covers around half of the important opinions majorly discussed in the set of information. or contains redundant/excess/unimportant details.
+<score>4</score> - The summary covers most of the important opinions majorly discussed in the set of information and has very less amount of redundant/excess/unimportant details.
+<score>5</score> - The summary covers all the important opinions majorly discussed in the set of information and has no redundant/excess/unimportant details.
+
+Product Title: {}
+
+Description: {}
+
+Key Features: {}
+
+Specifications: {}
+
+Reviews: {}
+
+Average Rating: {}
+
+Summary: {}
+
+Instructions:
+Let's go step-by-step. Follow the following steps strictly while giving the response:
+
+1. Identify all the important opinions majorly discussed in the set of information and list them with numbering.
+2. Identify the important opinions present in the summary and list them with numbering.
+3. Next identify how many important opinions are present in both summary and the set of information and list them with numbering
+4. Next idenify the how many redundant/excess/unimportant details does the summary have and list them with numbering.
+5. Finally use the evaluation criteria to output only a single score within <score></score> tags.
+
+Note: Strictly give the score within <score></score> tags only e.g Score- <score>5</score>.
+
+First give a detailed explanation only on relevance and then finally give a single score following the format: Score- <score>5</score>
+
+Response: 

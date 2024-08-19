@@ -1,0 +1,45 @@
+Task Description:
+Task Description:
+You will be given a set of information such as product title, description, key features, specifications, reviews, and average rating.  and a corresponding summary. Make sure you understand the following evaluation metric very clearly. Your task is to rate the summary corresponding to the given set of information on the evaluation criteria.
+
+Evaluation Criteria:
+Generic Opinion example: The battery is good.
+Specific Opinion example: The battery lasts for more than 12 hours on a single charge.
+
+Specificity - Specificity measures the level of detail and precision in the information and opinions presented in the summary. A specific summary provides concrete facts, measurements, or detailed descriptions about the product's features, performance, and user experiences. It avoids vague or general statements and instead offers precise information that gives readers a clear and thorough understanding of the product's characteristics and performance. 
+
+Summaries should be penalized for including vague or generic statements and rewarded for providing detailed, precise information about the product and user experiences.
+
+<score>1</score> - All the opinions presented in the summary are generic.
+<score>2</score> - Most of the opinions presented are generic.
+<score>3</score> - Only around half of the opinions presented are specific.
+<score>4</score> - Most of the opinions presented in the summary are specific. Very few opinions are generic.
+<score>5</score> - All the opinions presented in the summary are specific 
+
+Product Title: {}
+
+Description: {}
+
+Key Features: {}
+
+Specifications: {}
+
+Reviews: {}
+
+Average Rating: {}
+
+Summary: {}
+
+Instructions:
+Let's go step-by-step. Follow the following steps strictly while giving the response:
+
+1. Go through the summary and list down all the opinions presented.
+2. Check if details are presented for the opinions. Classify each opinion as specific or generic.
+3. Count the number of generic and specific occurrences.
+4. Finally use the previous information to output only a single score within <score></score> tags only using the evaluation criteria.
+
+Note: Strictly give the score within <score></score> tags only e.g Score- <score>5</score>.
+
+First give a detailed explanation only on specificity of the summary and then finally give a single score following the format: Score- <score>5</score>
+
+Response: 

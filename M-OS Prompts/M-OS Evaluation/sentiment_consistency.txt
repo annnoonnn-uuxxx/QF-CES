@@ -1,0 +1,32 @@
+Task Description:
+You will be given a set of information such as product title, description, key features, specifications, reviews, and average rating.  and a corresponding summary. Make sure you understand the following evaluation metric very clearly. Your task is to rate the summary corresponding to the given set of information on the evaluation criteria.
+
+Evaluation Criteria:
+Sentiment Consistency - Sentiment Consistency measures how accurately the summary reflects the consensus sentiment of users for each aspect of the product as expressed in the reviews. The consensus sentiment (or majority sentiment) for an aspect is determined by the most common sentiment expressed by users, categorized as very positive, positive, neutral, negative, or very negative.
+
+Following are the scores and the evaluation criteria according to which scores must be assigned.
+<score>1</score> - None of the aspects present in summary have the same majority sentiment as in reviews.
+<score>2</score> - Very few of the aspects present in summary have the same majority sentiment as in reviews.
+<score>3</score> - Only around half of the aspects present in summary have the same majority sentiment as in reviews.
+<score>4</score> - Most of the aspects present in summary have the same majority sentiment as in reviews.
+<score>5</score> - All aspects present in summary have the same majority sentiment as in reviews.
+
+Reviews: {}
+
+Average Rating: {}
+
+Summary: {}
+
+Instructions:
+Let's go step-by-step. Follow the following steps strictly while giving the response:
+
+1. Identify the aspects and their sentiment present in the summary and list them with numbering.
+2. For the list of aspects identified, identify the majority sentiment from the reviews and list them with numbering.
+3. Next identify how many aspect and sentiment match between reviews and summary from above and list them with numbering.
+4. Finally use the previous information to output only a single score within <score></score> tags only using the evaluation criteria.
+
+Note: Strictly give the score within <score></score> tags only e.g Score- <score>5</score>.
+
+First give a detailed explanation only on sentiment preservation of the summary and then finally give a single score following the format: Score- <score>5</score>
+
+Response: 
